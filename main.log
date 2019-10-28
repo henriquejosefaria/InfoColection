@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  28 OCT 2019 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  28 OCT 2019 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -285,62 +285,74 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 11.
-) (./pingodoce.tex [1
+) (./pingodoce.tex
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+[1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (3.45313pt too wide) in paragraph at lines 73--77
-\T1/cmr/m/n/10 go-doce.pt. 44 IN NS dns2.pingodoce.pt. pin-go-doce.pt. 44 IN NS
- dns.pingodoce.pt. 
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
  []
 
 
-Overfull \hbox (51.224pt too wide) in paragraph at lines 78--82
-[]\T1/cmr/m/n/10 ;; AD-DI-TI-O-NAL SEC-TION: dns3.pingodoce.pt. 44 IN A 213.13.
-169.10 dns.pingodoce.pt.
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
  []
 
 
-Overfull \hbox (5.51624pt too wide) in paragraph at lines 83--87
-[]\T1/cmr/m/n/10 ;; Query time: 52 msec ;; SER-VER: 193.137.16.65#53(193.137.16
-.65) ;; WHEN:
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
  []
 
-
-Overfull \hbox (34.5877pt too wide) in paragraph at lines 98--103
-\T1/cmr/m/n/10 Lis-boa, 1649-033 LIS-BOA, PT dsiaccounts@jeronimo-martins.pt; d
-siaccounts@jeronimo-
- []
-
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/.tex File ignored)
-Overfull \hbox (14.84729pt too wide) in paragraph at lines 107--19
-[]\T1/cmr/m/n/10 Informação do Na-me-ser-ver Name Ser-ver: dns2.pingodoce.pt | 
-IPv4: 194.65.31.203
- []
-
+[2]) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/.tex File ignored)
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
-[2] (./main.aux) ) 
+[3] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2784 strings out of 492616
- 37330 string characters out of 6129481
- 120154 words of memory out of 5000000
- 6666 multiletter control sequences out of 15000+600000
- 9795 words of font info for 22 fonts, out of 8000000 for 9000
+ 2786 strings out of 492616
+ 37352 string characters out of 6129481
+ 119154 words of memory out of 5000000
+ 6667 multiletter control sequences out of 15000+600000
+ 10571 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,5n,25p,799b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,25p,799b,214s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/
 cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super
 /sfbx0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/s
-fbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfb
-x1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0
-700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm090
-0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.
-pfb>
-Output written on main.pdf (2 pages, 93422 bytes).
+fbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfb
+x1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1
+440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm070
+0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.
+pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
+b>
+Output written on main.pdf (3 pages, 120291 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
