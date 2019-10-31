@@ -1,60 +1,55 @@
-\section{Facturação}
+\section{Dados a roubar}
 
-Caso pretenda a emissão de factura associada a transacção efectuada na loja, ser-lhe-ão solicitadas as informações requeridas legalmente, como sejam, número de contribuinte e/ou nome, morada. Estes dados serão mantidos pelos períodos definidos por lei.
+\par Dados como nome, morada e número de contribuinte são mantidos pelo periodo definido por lei após a faturação.\newline
 
-
-
-\section{Login com Facebook ou Google}
-
-A possibilidade de efectuar um registo com uma conta Facebook ou com uma conta Google evita a criação de um novo utilizador e password, disfrutando de uma experiência social integrada e personalizada. O site Pingo Doce não terá acesso às suas credenciais de autenticação (utilizador ou password), sendo partilhada informação publicada nestas plataformas, que o utilizador consentir ou de acordo com as definições de privacidade da conta Facebook ou conta Google do utilizador.
+\par Dados pessoais necessários para realizar candidaturas ou donativos são também guardados até ao final do processo para os quais foram dados. Após isso são eliminados.
 
 
-
-\section{Dados disponiveis}
-
-Para a gestão das candidaturas e dos donativos concedidos , são recolhidos os dados pessoais que permitem a gestão de candidaturas e de donativos atribuídos, seja de representantes de instituições, seja de subscritores das iniciativas. Os seus dados serão mantidos pelo período de tempo que se mostre necessário à prossecução ou conclusão da finalidade a que se destinam, findo o qual serão eliminados.
+\subsection{Comunicação de dados Pessoais e Segurança}
 
 
-
-\section{Contactos:}
-
-
-correio electrónico: cliente@pingodoce.pt\newline
+\par "A Companhia recorre a parceiros externos nomeadamente para desenvolvimento, manutenção e alojamento de sistemas informáticos, agências de marketing e comunicação, estudos de mercado, apoio ao cliente, a triagem, avaliação e selecção de candidatos. Nestes casos, a Companhia assegura que os seus parceiros cumprem com as medidas técnicas e organizacionais adequadas à actividade de processamento. Neste âmbito, os dados recolhidos poderão ser transferidos para entidades que se localizam em países terceiros (fora da União Europeia), sendo assegurado que são tomadas as medidas de segurança apropriadas de acordo com a legislação em vigor."\newline
 
 
-telemovel: 808 204 545 \newline
+\par Segundo esta citação os dados pessoais dos utilizadores podem ser enviados a terceiros aumentando as chances de um atacante poder obter esses dados.
 
 
-telefone: 210 114 411\newline
+\section{Autenticação - Facebook ou Google}
 
-
-linha de registo cartão poupa mais: 707 50 20 69\newline
-
-
-\subsection{Encarregado de Protecção de Dados:}
-
-email: dpo.portugal@jeronimo-martins.com\newline
-
-
-Localização sede:\newline 
-
-
-Av. Santo Condestável – Via Central Chelas 1900-806 Lisboa\newline
-
-Departamento de Recursos Humanos: \newline
-
-
-Pingo Doce Distribuição Alimentar SA., Rua Actor António Silva, 7 – 6º 1649-033 Lisboa
+\par O utilizador da plataforma pode usar uma conta Google ou de Facebook para se autenticar na plataforma, isto acrecenta vulnerabilidades no acesso aos dados do utilizador visto que podemos atacar outros sistemas para além deste, que podem ter outras vulnerabilidades.
 
 
 
-\section{Comunicação de dados Pessoais e Segurança}
+\section{Contactos Importantes}
+\begin{itemize}
+\item Correio electrónico para clientes: cliente@pingodoce.pt\newline
 
-Os dados recolhidos não são transferidos para terceiros sem o seu consentimento prévio. No entanto, a Companhia recorre a parceiros externos nomeadamente para desenvolvimento, manutenção e alojamento de sistemas informáticos, agências de marketing e comunicação, estudos de mercado, apoio ao cliente, a triagem, avaliação e selecção de candidatos. Nestes casos, a Companhia assegura que os seus parceiros cumprem com as medidas técnicas e organizacionais adequadas à actividade de processamento. Neste âmbito, os dados recolhidos poderão ser transferidos para entidades que se localizam em países terceiros (fora da União Europeia), sendo assegurado que são tomadas as medidas de segurança apropriadas de acordo com a legislação em vigor.
+
+\item Telemóvel: 808 204 545 \newline
 
 
+\item Telefone:    210 114 411\newline
 
-\section{Querys para ver servidores e serviços}
+
+\item Linha de registo cartão poupa mais: 707 50 20 69\newline
+
+\item Localização sede:\newline
+
+
+\par Av. Santo Condestável – Via Central Chelas 1900-806 Lisboa\newline
+
+
+\item Localização do departamento de recursos humanos: \newline
+
+
+\par Pingo Doce Distribuição Alimentar SA., Rua Actor António Silva, 7 – 6º 1649-033 Lisboa \newline
+
+
+\item Email do encarregado de Protecção de Dados:  dpo.portugal@jeronimo-martins.com \newline
+\end{itemize}
+
+
+\section{Querys para obter informações sobre servidores e serviços}
 
 \subsection{dig -4 www.pingodoce.pt}
 
@@ -86,31 +81,65 @@ dns2.pingodoce.pt.	44	IN	A	194.65.31.203 \newline
 ;; WHEN: Mon Oct 28 10:05:15 WET 2019 \newline
 ;; MSG SIZE  rcvd: 165 \newline
 }
+\indent\rule{8cm}{0.4pt}
 
-\subsection{whois pingodoce.pt}
+
+\par Como podemos ver pela resposta obtida pelo dig temos 3 NameServers autoritários para \textit{www.pingodoce.pt}:
+\begin{itemize}
+\item dns3.pingodoce.pt
+\item dns2.pingodoce.pt 
+\item dns.pingodoce.pt
+\end{itemize}
+
+
+\par Estes têm respetivamente os seguintes endereços IPv4:
+\begin{itemize}
+\item 213.13.169.10
+\item 194.65.31.203
+\item 194.65.31.202
+\end{itemize}
+
+
+\par O endereço destino \textit{www.pingodoce.pt} tem IPv4 194.65.31.215.\newline
+
+
+\par Podemos concluir sobre os IPs que dois dos nomes autoritários partilham a mesma rede do endereço alvo (194.65.31.X/24) e um terceiro servidor, dns3.pingodoce.pt, encontra-se numa rede separada (213.13.169.X/24).
+
+\subsection{Whois pingodoce.pt}
 
 \flushleft{
-Domínio	pingodoce.pt \newline
-Data de Submissão	1998-06-04 \newline
-Data de Expiração	2022-07-04 \newline
+Domain: pingodoce.pt\newline
+Domain Status: Registered\newline
 
 
-Estado	Registered: \newline
+Creation Date: 04/06/1998 00:00:00\newline
+Expiration Date: 04/07/2022 23:59:40\newline
 
 
-Titular	Pingo Doce - Distribuicao Alimentar S.A. \newline
-Rua Actor Antonio Silva, 7, Lisboa, 1649-033 LISBOA, PT \newline
-dsiaccounts@jeronimo-martins.pt; dsiaccounts@jeronimo-martins.com \newline
-Entidade Gestora	Pingo Doce - Distribuicao Alimentar S.A. \newline
-Pingo Doce - Distribuicao Alimentar S.A., Rua Actor Antonio Silva, 7, Lisboa, 1649-033 LISBOA, PT \newline
+Owner Name: Pingo Doce - Distribuicao Alimentar S.A.\newline
+Owner Address: Rua Actor Antonio Silva, 7\newline
+Owner Locality: LISBOA\newline
+Owner ZipCode: 1649-033\newline
+Owner Locality ZipCode: LISBOA\newline
+Owner Country Code: PT\newline
+Owner Email: dsiaccounts@jeronimo-martins.pt,dsiaccounts@jeronimo-martins.com\newline
 
 
-dsiaccounts@jeronimo-martins.pt; \newline
-dsiaccounts@jeronimo-martins.com \newline
+Admin Name: Pingo Doce - Distribuicao Alimentar S.A.\newline
+Admin Address: Rua Actor Antonio Silva, 7\newline
+Admin Locality: LISBOA\newline
+Admin ZipCode: 1649-033\newline
+Admin Locality ZipCode: LISBOA\newline
+Admin Country Code: PT\newline
+Admin Email: dsiaccounts@jeronimo-martins.pt,dsiaccounts@jeronimo-martins.com\newline
 
 
-Informação do Nameserver \newline	
 Name Server: dns2.pingodoce.pt | IPv4: 194.65.31.203 and IPv6: \newline
 Name Server: dns3.pingodoce.pt | IPv4: 213.13.169.10 and IPv6: \newline
-Name Server: dns.pingodoce.pt  | IPv4: 194.65.31.202 and IPv6: \newline
+Name Server: dns.pingodoce.pt | IPv4: 194.65.31.202 and IPv6: \newline
 }
+
+\noindent\rule{8cm}{0.4pt}
+
+\par Com o comando \textit{whois pingodoce.pt} obtemos mais algumas informações sobre quem estamos a investigar.\newline
+\par Estas informações são sobre as datas de criação e em que expira o dominio, sobre o dono sabemos o nome, a localização da sua sede, o código postal, o pais e o email do mesmo. Para além disso temos análogas sobre o administrador do sistema.
