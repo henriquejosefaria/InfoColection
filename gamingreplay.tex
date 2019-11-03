@@ -1,0 +1,102 @@
+\section{GamingReplay}
+
+A empresa especializa-se na venda/compra de artigos relacionados com videojogos desde consolas,videojogos de varias consolas como támbem Merchandising.Está no mercado desde 2009 mas com experiência desde 2007 nesta área.
+
+A marca é comercializada por \emph{SharingJourney,Lda} como pode ser retirado na figura \ref{fig:LocEmpresa}  retirada do Website .Apesar de a Gamingreplay estar no mercado desde 2009 a empresa que a comercializa foi oficialmente constituida em 21 de Junho de 2013.
+
+\begin{figure}[h!]
+\caption{Informação da Empresa}
+\centering
+\includegraphics[width=\textwidth,height=3cm,keepaspectratio]{Images/LocEmpresa.png}
+\label{fig:LocEmpresa}
+\end{figure}
+
+\subsection{Localização \& Contactos}
+
+Esta pequena empresa tem duas lojas fisicas localizadas em \emph{Arrábida Shopping Piso 1 - Loja 166 - Vila Nova de Gaia} e em \emph{Almada Forúm Piso 0 - Loja 1.112 - Almada} para além disso também gerem um Website que funciona como loja Online em \emph{https://www.gamingreplay.pt}(Figura \ref{fig:LocLojas}).
+Ainda sobre a loja online ainda pode descubrir-se um Código Postal associado (4400-275).
+
+\begin{figure}[h!]
+\caption{Localização da Empresa}
+\centering
+\includegraphics[width=\textwidth,height=3cm,keepaspectratio]{Images/LocLojas.png}
+\label{fig:LocLojas}
+\end{figure}
+
+A primeira loja tem associada um email \emph{lojaarrabida@gamingreplay.com}
+como um telefone \emph{224 103 675}.E o mesmo encontra-se sobre a segunda loja \emph{lojaalmada@gamingreplay.com -265 414 909}.Enquanto a loja online esta tambem tem um email \emph{clientes@gamingreplay.com} e um telemovel associado \emph{919 176 465}.
+
+\subsection{Política de privacidade}
+
+A política de privacidade que consta a empresa estar conforme é a que está prevista no \emph{Regulamento (UE) 2016/679} do Parlamento Europeu e do Conselho de 27 de Abril de 2016.
+
+Os dados pessoais(nome,e-mail,telefone,morada) dos clientes são guardados pelo período de 2 anos desde o consentimento pelo mesmo.Caso o cliente usufrua de algum serviço da empresa o prazo sera extendido para 5 anos.O utilizador tem o direito de realizar as seguintes operações indicadas na figura \ref{fig:OperCliente}.
+
+\begin{figure}[h!]
+\caption{Operações do Cliente sobre os seus dados}
+\centering
+\includegraphics[width=\textwidth,height=3cm,keepaspectratio]{Images/OperCliente.png}
+\label{fig:OperCliente}
+\end{figure}
+
+\subsection{Dominios Associados}
+
+O website \emph{www.gamingreplay.com} é utilizado como a página principal do negócio, porém ao pesquisar os A records associados(Figura \ref{fig:DNSArecords}) a esse mesmo dominio encontramos o seguinte:
+
+\begin{enumerate}
+
+\item Os dominios que contem "media" redirecionam para a página principal.Possivelmente sejam vários servidores para previnir ataques de Denial of Service.
+\newline
+\item O dominio começado por "phpma" corresponde a uma pagina administração de base de dados.Mais especificamente, corresponde a um software phpMyAdmin que permite gerir base de dados MySQL atráves da Web.Para aceder a base de dados é necessário um par username/password.
+\newline
+\item O dominio webdisk.gamingreplay.com corresponde á um serviço de gestao de ficheiros usados pelo website.Requere autentificação para aceder ao serviço
+\newline
+\item O dominio cpanel.gamingreplay.com diz respeito a um serviço de gestao do Website onde pode estar integrado o serviço anterior.Como os anteriores requere autentificação.
+\newline
+\item O dominio webmail.gamingreplay.com tanto como o autodiscover.gamingreplay.com fornecem serviços de gestão e-mail.O primeiro está integrado no Cpanel e o segundo é um serviço necessário para usar o Outlook Exchange.
+\newline
+\item O dominio gamingreplayserver.gamingreplay.com provavelmente diz respeito ao back-end da página.Encontra-se em Lisboa e o serviço responsável por esse IP é a empresa \emph{Claranet Portugal}.
+\hfill\\
+\end{enumerate}
+
+Note-se que todos estes dominios excepto o ultimo estão localizados no mesmo IPv4.
+
+\begin{figure}[h!]
+\caption{A records associados a Gamingreplay.com}
+\centering
+\includegraphics[width=\textwidth,height=6cm,keepaspectratio]{Images/DNSArecords.png}
+\label{fig:DNSArecords}
+\end{figure}
+
+Observando outros tipos de DNS records(Figura \ref{fig:DNSRecords}) pode concluir-se tambem que:
+
+\begin{enumerate}
+
+\item Os servidores DNS que estão responsaveis pelo domínio pertence a empresa linxisp sendo o ns1.linxisp.net o servidor primário.
+\newline
+\item No record TXT encontra-se dois IPs um corresponde ao IP associado ao Website.O outro corresponde a um serviço de Cloud da empresa \emph{Almouroltec - Serviços Informática Internet, Lda.}.Este formato de record Txt corresponde a um Sender Policy Framework ,isto é, os IPs que podem enviar emails atraves do dominio de forma a autentificar a origem do email e este não ser considerado como spam.
+
+\end{enumerate}
+
+\begin{figure}[h!]
+\caption{DNS records associados a Gamingreplay.com}
+\centering
+\includegraphics[width=\textwidth,height=6cm,keepaspectratio]{Images/DNSRecords.png}
+\label{fig:DNSRecords}
+\end{figure}
+
+Finalmente analisou-se um header do pedido HTTP(Figura \ref{fig:HTTPHeader}) usado para aceder ao Website principal.Analisando o conteúdo do Header pode retirar-se que utilizam um servidor Apache e as cookies sao "escolhidas" pelo software PrestaShop.
+
+O software Prestashop é utilizados para automatizar os processos de uma loja online.No entanto requere que os utilizadores tenham instalado um servidor Web Apache 1.3 ou posterior, PHP 5 ou superior e o MySQL 5 ou superior.
+
+\begin{figure}[h!]
+\caption{HTTP Header de Gamingreplay.com}
+\centering
+\includegraphics[width=\textwidth,height=10cm,keepaspectratio]{Images/HTTPHeader.png}
+\label{fig:HTTPHeader}
+\end{figure}
+
+
+
+
+
