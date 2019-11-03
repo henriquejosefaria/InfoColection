@@ -210,7 +210,7 @@ Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a
 \par Com esta análize podemos concluir que tanto o HTTP como o SSL têm as respetivas portas abertas.\newline
 
 
-\par Determinar o endereço de email é uma forma de localizar a firewall da organização, para isso basta usar -textit{host pingodoce.pt}. O resultado pode ser visto na figura abaixo.
+\par Determinar o endereço de email é uma forma de localizar a firewall da organização, para isso basta usar \textit{host pingodoce.pt}. O resultado pode ser visto na figura abaixo.
 
 \begin{figure}[H]
 
@@ -222,12 +222,12 @@ Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a
   	\label{fig:03}
 \end{figure}
 
-\par Por fim, fazendo uso do nmap sobre o ip referente a pingodoce.pt obtemos as seguintes imagens.
+\par Por fim, fazendo uso do nmap sobre o IP referente a pingodoce.pt obtemos as seguintes imagens.
  \begin{figure}[H]
 
 	\centering
 
- 	\includegraphics[scale = 0.4]{NMAPscan1.png}
+ 	\includegraphics[scale = 0.3]{NMAPscan1.png}
  	\caption {NMAP output 1}
 
   	\label{fig:04}
@@ -236,13 +236,13 @@ Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a
 
 	\centering
 
- 	\includegraphics[scale = 0.4]{NMAPscan2.png}
+ 	\includegraphics[scale = 0.3]{NMAPscan2.png}
  	\caption {NMAP output 2}
 
   	\label{fig:05}
 \end{figure}
 
-\par Na primeira podemos inferir que deve haver uma firewall ou um mecanismo de segurança a bloquear os acessos ao servidor, isto porque para cada pacote enviado é retornado o resultado \textit{No route to host}.\newline
+\par Ao observar a primeira imagem podemos inferir que deve haver uma firewall ou um mecanismo de segurança a bloquear os acessos ao servidor. Isto porque ,para cada pacote enviado, é retornado o resultado \textit{No route to host}, ou seja, não é permitido realizar este tipo de análise sobre o nosso alvo.\newline
 \par Na segunda imagem temos a resposta de dois serviços não identificados, este podem possívelmente ser explorados caso descubramos a sua identidade.\newline
 \par Resumindo toda a informação obtida sobre o Pingo Doce ao longo deste trabalho, a empresa tem uma postura de segurança boa em relação á manutenção de servidores, precavem-se contra possíveis ataques de DoS e em termos de acesso a informação sensivel sobre a rede interna da empresa. No entanto peca na vertente da engenharia social, a informação de quem são os empregados é pública e estes não uma fonte de preocupação em termos de segurança visto que na maior parte das vezes estes são a porta de entrada para um sistema. 
 
