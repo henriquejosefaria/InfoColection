@@ -1,22 +1,27 @@
-\section{Dados a roubar}
+\section{Dados Sensiveis}
 
-\par Dados como nome, morada e número de contribuinte são mantidos pelo periodo definido por lei após a faturação.\newline
+\par "Dados como nome, morada e número de contribuinte são mantidos pelo periodo definido por lei após a faturação."\newline
 
-\par Dados pessoais necessários para realizar candidaturas ou donativos são também guardados até ao final do processo para os quais foram dados. Após isso são eliminados.
+\par "Dados pessoais necessários para realizar candidaturas ou donativos são também guardados até ao final do processo para os quais foram dados. Após isso são eliminados."\newline
+
+\par Por estas citações podemos concluir que caso ganhemos aceso ao sistema, conseguiremos obter nomes, moradas, números de contribuintes e outros dados sensiveis.
 
 
-\subsection{Comunicação de dados Pessoais e Segurança}
+
+\subsection{Fragilidades na Comunicação de Dados Pessoais e Segurança}
 
 
 \par "A Companhia recorre a parceiros externos nomeadamente para desenvolvimento, manutenção e alojamento de sistemas informáticos, agências de marketing e comunicação, estudos de mercado, apoio ao cliente, a triagem, avaliação e selecção de candidatos. Nestes casos, a Companhia assegura que os seus parceiros cumprem com as medidas técnicas e organizacionais adequadas à actividade de processamento. Neste âmbito, os dados recolhidos poderão ser transferidos para entidades que se localizam em países terceiros (fora da União Europeia), sendo assegurado que são tomadas as medidas de segurança apropriadas de acordo com a legislação em vigor."\newline
 
 
-\par Segundo esta citação os dados pessoais dos utilizadores podem ser enviados a terceiros aumentando as chances de um atacante poder obter esses dados.
+\par Segundo esta citação os dados pessoais dos utilizadores podem ser enviados a terceiros aumentando as chances de um atacante poder obter esses dados durante a transferência dos mesmo. Para além disso as politicas de segurança de uma empresa "parceira" do pingo doce ainda que submetida á legislação em vigor, pode ter critérios de segurança pouco firmes por exemplo no requisito de impedir ataques por engenharia social.\newline
+\par Note-se que uma das melhores formas de obter dados sensiveis de uma empresa de grande dimensão é muitas vezes fazendo uso de parceiros de menor dimensão com critérios de segurança mais lassos.
 
 
 \section{Autenticação - Facebook ou Google}
 
 \par O utilizador da plataforma pode usar uma conta Google ou de Facebook para se autenticar na plataforma, isto acrecenta vulnerabilidades no acesso aos dados do utilizador visto que podemos atacar outros sistemas para além deste, que podem ter outras vulnerabilidades.
+\par Por exemplo, o facebook, caso um utilizador se engane a escrever a password e apenas altere uma letra muitas vezes assume que se trata da pessoa certa e permite o acesso á conta.
 
 
 
@@ -28,7 +33,7 @@
 \item Telemóvel: 808 204 545 \newline
 
 
-\item Telefone:    210 114 411\newline
+\item Telefone:  210 114 411\newline
 
 
 \item Linha de registo cartão poupa mais: 707 50 20 69\newline
@@ -46,11 +51,11 @@
 
 \item CEO pingo doce: Isabel Ferreira Pinto\newline
 
-\par Perfil Linkdin: https://www.linkedin.com/in/isabel-ferreira-pinto-73b88046/
+\par Perfil Linkdin: https://www.linkedin.com/in/isabel-ferreira-pinto-73b88046/\newline
 
 \item Perfis de funcionários úteis para "social engeniering":\newline
 
-\par https://www.linkedin.com/company/pingo-doce/people/
+\par https://www.linkedin.com/company/pingo-doce/people/\newline
 
 \item Email do encarregado de Protecção de Dados:  dpo.portugal@jeronimo-martins.com \newline
 \end{itemize}
@@ -90,7 +95,7 @@ dns2.pingodoce.pt.	44	IN	A	194.65.31.203 \newline
 }
 \indent\rule{8cm}{0.4pt}
 
-
+\par Note-se que só é apresentado o dig -4 e não o dig -6 pois não há resposta de nenhum servidor quando inquirimos www.pingodoce.pt com IPv6.\newline
 \par Como podemos ver pela resposta obtida pelo dig temos 3 NameServers autoritários para \textit{www.pingodoce.pt}:
 \begin{itemize}
 \item dns3.pingodoce.pt
@@ -150,7 +155,7 @@ Name Server: dns.pingodoce.pt | IPv4: 194.65.31.202 and IPv6: \newline
 
 \par Com o comando \textit{whois pingodoce.pt} obtemos mais algumas informações sobre quem estamos a investigar.\newline
 Estas informações são sobre as datas de criação e em que expira o dominio, sobre o dono sabemos o nome, a localização da sua sede, o código postal, o pais e o email do mesmo. Para além disso temos análogas sobre o administrador do sistema.\newline
-Apesar de usar o whois nos fornecer estes dados extra de formos a \url{https://www.iana.org/whois} e pesquisarmos por \textit{www.pingodoce.pt} podemos obter informação sobre quem registou este site. O resultado segue em baixo.
+Apesar de usar o whois nos fornecer estes dados extra de formos a \url{https://www.iana.org/whois} e pesquisarmos por \textit{www.pingodoce.pt} podemos obter informação sobre quem registou este site, neste caso os responsáveis pelo dominio \textit{.pt}. O resultado segue em baixo.
 
 \begin{figure}[H]
 
@@ -164,13 +169,9 @@ Apesar de usar o whois nos fornecer estes dados extra de formos a \url{https://w
 \end{figure}
 
 
+Este resultado é útil na medida em que revela nomes, emails, números de telefone etc.
 
-
-Este resultado ....
-
-
-
-Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a www.pingodoce.pt. A seguinte imagem representa a busca feita a várias portas conhecidas que se enumeram de seguinda bem como os respetivos resultados.
+Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a www.pingodoce.pt. A seguinte imagem representa a busca feita a várias portas conhecidas que se enumeram de seguida bem como os respetivos resultados.
 
 \begin{figure}[H]
 
@@ -179,7 +180,7 @@ Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a
  	\includegraphics[scale = 0.6]{portsCheck.png}
  	\caption {Exemplo de teste feito a portas do IPv4 correspondente a www.pingodoce.pt}
 
-  	\label{fig02}
+  	\label{fig:02}
 \end{figure}
 
 \par \textbf{Portas testadas:} 
@@ -206,4 +207,40 @@ Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a
 \item Warcraft III
 \end{itemize}
 
-\par Com esta análize podemos concluir que tanto o HTTP como o SSL têm as respetivas portas abertas.
+\par Com esta análize podemos concluir que tanto o HTTP como o SSL têm as respetivas portas abertas.\newline
+
+
+\par Determinar o endereço de email é uma forma de localizar a firewall da organização, para isso basta usar -textit{host pingodoce.pt}. O resultado pode ser visto na figura abaixo.
+
+\begin{figure}[H]
+
+	\centering
+
+ 	\includegraphics[scale = 0.4]{hostMailHandler.png}
+ 	\caption {Emails referentes a pingodoce.pt}
+
+  	\label{fig:03}
+\end{figure}
+
+\par Por fim, fazendo uso do nmap sobre o ip referente a pingodoce.pt obtemos as seguintes imagens.
+ \begin{figure}[H]
+
+	\centering
+
+ 	\includegraphics[scale = 0.4]{NMAPscan1.png}
+ 	\caption {NMAP output 1}
+
+  	\label{fig:04}
+\end{figure}
+\begin{figure}[H]
+
+	\centering
+
+ 	\includegraphics[scale = 0.4]{NMAPscan2.png}
+ 	\caption {NMAP output 2}
+
+  	\label{fig:05}
+\end{figure}
+
+\par Na primeira podemos inferir que deve haver uma firewall ou um mecanismo de segurança a bloquear os acessos ao servidor, isto porque para cada pacote enviado é retornado o resultado \textit{No route to host}.\newline
+\par Na segunda imagem temos a resposta de dois serviços não identificados, este podem possívelmente ser explorados caso descubramos a sua identidade.
