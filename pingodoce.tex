@@ -44,6 +44,13 @@
 
 \par Pingo Doce Distribuição Alimentar SA., Rua Actor António Silva, 7 – 6º 1649-033 Lisboa \newline
 
+\item CEO pingo doce: Isabel Ferreira Pinto\newline
+
+\par Perfil Linkdin: https://www.linkedin.com/in/isabel-ferreira-pinto-73b88046/
+
+\item Perfis de funcionários úteis para "social engeniering":\newline
+
+\par https://www.linkedin.com/company/pingo-doce/people/
 
 \item Email do encarregado de Protecção de Dados:  dpo.portugal@jeronimo-martins.com \newline
 \end{itemize}
@@ -142,4 +149,61 @@ Name Server: dns.pingodoce.pt | IPv4: 194.65.31.202 and IPv6: \newline
 \noindent\rule{8cm}{0.4pt}
 
 \par Com o comando \textit{whois pingodoce.pt} obtemos mais algumas informações sobre quem estamos a investigar.\newline
-\par Estas informações são sobre as datas de criação e em que expira o dominio, sobre o dono sabemos o nome, a localização da sua sede, o código postal, o pais e o email do mesmo. Para além disso temos análogas sobre o administrador do sistema.
+Estas informações são sobre as datas de criação e em que expira o dominio, sobre o dono sabemos o nome, a localização da sua sede, o código postal, o pais e o email do mesmo. Para além disso temos análogas sobre o administrador do sistema.\newline
+Apesar de usar o whois nos fornecer estes dados extra de formos a \url{https://www.iana.org/whois} e pesquisarmos por \textit{www.pingodoce.pt} podemos obter informação sobre quem registou este site. O resultado segue em baixo.
+
+\begin{figure}[H]
+
+	\centering
+
+ 	\includegraphics[scale = 0.5]{registadorPingoDoce1.png}
+ 	\includegraphics[scale = 0.5]{registadorPingoDoce2.png}
+ 	\caption {Dados do registador do site www.pingodoce.pt}
+
+  	\label{fig01}
+\end{figure}
+
+
+
+
+Este resultado ....
+
+
+
+Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a www.pingodoce.pt. A seguinte imagem representa a busca feita a várias portas conhecidas que se enumeram de seguinda bem como os respetivos resultados.
+
+\begin{figure}[H]
+
+	\centering
+
+ 	\includegraphics[scale = 0.6]{portsCheck.png}
+ 	\caption {Exemplo de teste feito a portas do IPv4 correspondente a www.pingodoce.pt}
+
+  	\label{fig02}
+\end{figure}
+
+\par \textbf{Portas testadas:} 
+\begin{itemize}
+\item FTP
+\item SSH
+\item TELNET
+\item SMTP
+\item DNS
+\item HTTP
+\item POP3
+\item SFTP
+\item RPC
+\item netBIOS
+\item IMAP
+\item IRC
+\item SSL
+\item SMB
+\item MSSQL
+\item MySQL
+\item RemoteDesktop
+\item PCAnywhere
+\item VNC
+\item Warcraft III
+\end{itemize}
+
+\par Com esta análize podemos concluir que tanto o HTTP como o SSL têm as respetivas portas abertas.
