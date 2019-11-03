@@ -1,4 +1,5 @@
-\section{Dados Sensiveis}
+\section{Pingo Doce}
+\subsection{Dados Sensiveis}
 
 \par "Dados como nome, morada e número de contribuinte são mantidos pelo periodo definido por lei após a faturação."\newline
 
@@ -8,8 +9,8 @@
 
 
 
-\subsection{Fragilidades na Comunicação de Dados Pessoais e Segurança}
-
+\subsubsection{Fragilidades na Comunicação de Dados Pessoais e Segurança}
+\hfill\\
 
 \par "A Companhia recorre a parceiros externos nomeadamente para desenvolvimento, manutenção e alojamento de sistemas informáticos, agências de marketing e comunicação, estudos de mercado, apoio ao cliente, a triagem, avaliação e selecção de candidatos. Nestes casos, a Companhia assegura que os seus parceiros cumprem com as medidas técnicas e organizacionais adequadas à actividade de processamento. Neste âmbito, os dados recolhidos poderão ser transferidos para entidades que se localizam em países terceiros (fora da União Europeia), sendo assegurado que são tomadas as medidas de segurança apropriadas de acordo com a legislação em vigor."\newline
 
@@ -18,14 +19,14 @@
 \par Note-se que uma das melhores formas de obter dados sensiveis de uma empresa de grande dimensão é muitas vezes fazendo uso de parceiros de menor dimensão com critérios de segurança mais lassos.
 
 
-\section{Autenticação - Facebook ou Google}
+\subsection{Autenticação - Facebook ou Google}
 
 \par O utilizador da plataforma pode usar uma conta Google ou de Facebook para se autenticar na plataforma, isto acrecenta vulnerabilidades no acesso aos dados do utilizador visto que podemos atacar outros sistemas para além deste, que podem ter outras vulnerabilidades.
 \par Por exemplo, o facebook, caso um utilizador se engane a escrever a password e apenas altere uma letra muitas vezes assume que se trata da pessoa certa e permite o acesso á conta.
 
 
 
-\section{Contactos Importantes}
+\subsection{Contactos Importantes}
 \begin{itemize}
 \item Correio electrónico para clientes: cliente@pingodoce.pt\newline
 
@@ -61,28 +62,28 @@
 \end{itemize}
 
 
-\section{Querys para obter informações sobre servidores e serviços}
+\subsection{Querys para obter informações sobre servidores e serviços}
 
-\subsection{dig -4 www.pingodoce.pt}
+\subsubsection{dig -4 www.pingodoce.pt}
 
 \flushleft{
-;; OPT PSEUDOSECTION: \newline
+;; OPT PSEUDOsection: \newline
 ; EDNS: version: 0, flags:; udp: 4096 \newline
-;; QUESTION SECTION: \newline
+;; QUESTION section: \newline
 ;www.pingodoce.pt.		IN	A \newline
 
 
-;; ANSWER SECTION: \newline
+;; ANSWER section: \newline
 www.pingodoce.pt.	44	IN	A	194.65.31.215 \newline
 
 
-;; AUTHORITY SECTION: \newline
+;; AUTHORITY section: \newline
 pingodoce.pt.		44	IN	NS	dns3.pingodoce.pt. \newline
 pingodoce.pt.		44	IN	NS	dns2.pingodoce.pt. \newline
 pingodoce.pt.		44	IN	NS	dns.pingodoce.pt. \newline
 
 
-;; ADDITIONAL SECTION: \newline
+;; ADDITIONAL section: \newline
 dns3.pingodoce.pt.	44	IN	A	213.13.169.10 \newline
 dns.pingodoce.pt.	44	IN	A	194.65.31.202 \newline
 dns2.pingodoce.pt.	44	IN	A	194.65.31.203 \newline
@@ -117,7 +118,7 @@ dns2.pingodoce.pt.	44	IN	A	194.65.31.203 \newline
 
 \par Podemos concluir sobre os IPs que dois dos nomes autoritários partilham a mesma rede do endereço alvo (194.65.31.X/24) e um terceiro servidor, dns3.pingodoce.pt, encontra-se numa rede separada (213.13.169.X/24).
 
-\subsection{Whois pingodoce.pt}
+\subsubsection{Whois pingodoce.pt}
 
 \flushleft{
 Domain: pingodoce.pt\newline
@@ -244,5 +245,4 @@ Posteriormente foram testadas algumas portas para o IP 194.65.31.215 referente a
 
 \par Ao observar a primeira imagem podemos inferir que deve haver uma firewall ou um mecanismo de segurança a bloquear os acessos ao servidor. Isto porque ,para cada pacote enviado, é retornado o resultado \textit{No route to host}, ou seja, não é permitido realizar este tipo de análise sobre o nosso alvo.\newline
 \par Na segunda imagem temos a resposta de dois serviços não identificados, este podem possívelmente ser explorados caso descubramos a sua identidade.\newline
-\par Resumindo toda a informação obtida sobre o Pingo Doce ao longo deste trabalho, a empresa tem uma postura de segurança boa em relação á manutenção de servidores, precavem-se contra possíveis ataques de DoS e em termos de acesso a informação sensivel sobre a rede interna da empresa. No entanto peca na vertente da engenharia social, a informação de quem são os empregados é pública e estes não uma fonte de preocupação em termos de segurança visto que na maior parte das vezes estes são a porta de entrada para um sistema. 
 
